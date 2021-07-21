@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Work</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Graphics Designer">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./images/favicon.ico" />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	<div class="page">
+		<header class="header">
+			<div class="container clearfix">
+				<a href="./index.html" class="logo-link" rel="home">
+					KG
+				</a>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<section class="content">
+					<h2 class="page-main-title"><span>My Work</span></h2>
+
+					<div class="gallery-block">
+						<ul class="gallery-list">
+							<li class="gallery-item">
+								<a href="./images/1.jpg" data-fancybox="gallery">
+									<img src="./images/1.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/2.jpg" data-fancybox="gallery">
+									<img src="./images/2.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/3.jpg" data-fancybox="gallery">
+									<img src="./images/3.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/4.jpg" data-fancybox="gallery">
+									<img src="./images/4.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/5.jpg" data-fancybox="gallery">
+									<img src="./images/5.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/6.jpg" data-fancybox="gallery">
+									<img src="./images/6.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/7.jpg" data-fancybox="gallery">
+									<img src="./images/7.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/8.jpg" data-fancybox="gallery">
+									<img src="./images/8.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/9.jpg" data-fancybox="gallery">
+									<img src="./images/9.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/10.jpg" data-fancybox="gallery">
+									<img src="./images/10.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/11.jpg" data-fancybox="gallery">
+									<img src="./images/11.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/12.jpg" data-fancybox="gallery">
+									<img src="./images/12.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/13.jpg" data-fancybox="gallery">
+									<img src="./images/13.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/14.jpg" data-fancybox="gallery">
+									<img src="./images/14.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/15.jpg" data-fancybox="gallery">
+									<img src="./images/15.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/16.jpg" data-fancybox="gallery">
+									<img src="./images/16.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/17.jpg" data-fancybox="gallery">
+									<img src="./images/17.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/18.jpg" data-fancybox="gallery">
+									<img src="./images/18.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/19.jpg" data-fancybox="gallery">
+									<img src="./images/19.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/20.jpg" data-fancybox="gallery">
+									<img src="./images/20.jpg" />
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container clearfix">
+				<div class="footer-social">
+					<div class="footer-links">
+						<a class="social-link social-linkedin"
+							href="https://www.linkedin.com/in/kiran-ghadge-124649216/" title="linkedIn" target="_blank">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<span class="copyright">&copy; 2021. All rights reserverd.</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/newWaterfall.js"></script>
+	<script src="./js/jquery.fancybox.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.gallery-list').NewWaterfall({
+				width: 360,
+				delay: 100,
+			});
+			// $("[data-fancybox]").fancybox({
+			// 	clickContent: false,
+			// 	buttons: [
+			// 		"close"
+			// 	],
+			// });
+		});
+	</script>
+</body>
+
+</html>
