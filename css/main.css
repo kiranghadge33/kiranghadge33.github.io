@@ -143,6 +143,9 @@ ul li {
     box-shadow: 0 0 5rem rgb(0 0 0 / 60%);
     transform: translateY(-10px);
 }
+.gallery-list .gallery-item img {
+    width: 100%;
+}
 
 /* Mobile */
 @media (max-width: 991px) {

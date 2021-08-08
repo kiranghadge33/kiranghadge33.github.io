@@ -131,6 +131,56 @@
 									<img src="./images/20.jpg" />
 								</a>
 							</li>
+							<li class="gallery-item">
+								<a href="./images/21.jpg" data-fancybox="gallery">
+									<img src="./images/21.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/22.gif" data-fancybox="gallery">
+									<img src="./images/22.gif" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/23.jpg" data-fancybox="gallery">
+									<img src="./images/23.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/24.jpg" data-fancybox="gallery">
+									<img src="./images/24.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/25.jpg" data-fancybox="gallery">
+									<img src="./images/25.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/26.jpg" data-fancybox="gallery">
+									<img src="./images/26.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/27.jpg" data-fancybox="gallery">
+									<img src="./images/27.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/28.jpg" data-fancybox="gallery">
+									<img src="./images/28.jpg" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/29.gif" data-fancybox="gallery">
+									<img src="./images/29.gif" />
+								</a>
+							</li>
+							<li class="gallery-item">
+								<a href="./images/30.gif" data-fancybox="gallery">
+									<img src="./images/30.gif" />
+								</a>
+							</li>
 						</ul>
 					</div>
 
@@ -157,6 +207,28 @@
 	<script src="./js/jquery-1.12.4.min.js"></script>
 	<script src="./js/newWaterfall.js"></script>
 	<script src="./js/jquery.fancybox.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+	<script>
+	  	// Your web app's Firebase configuration
+		var firebaseConfig = {
+		    apiKey: "AIzaSyBBwyUwYNR1stPIB2Zxe3bhI9nhs-Z4jtY",
+		    authDomain: "work-d2133.firebaseapp.com",
+		    projectId: "work-d2133",
+		    storageBucket: "work-d2133.appspot.com",
+		    messagingSenderId: "226183870632",
+		    appId: "1:226183870632:web:dcbf2d4f1e2241a32c2a9d"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		const storage = firebase.storage();
+        const listRef = storage.ref(`/images`);
+        listRef.listAll()
+            .then((res) => {
+               console.log(res)
+            }).catch((error) => {
+                console.log(error);
+            });
+	</script>
 
 	<script type="text/javascript">
 		$(document).ready(function () {
